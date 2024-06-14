@@ -12,7 +12,7 @@ var tsv = ExportProperties(objects,"Name,ObjectType,Parent,Description,FormatStr
 tsv.Output();
 ```
 
-# Script to create DumpFilters Measure.
+# Script to create DumpFilters Measure **WIP Doesn't work at the moment**
 
 The following script creates the DumpFilters measure, the TLDR of it is that it shows all applied filters (useful as tooltip or other options. For more information checkout [this link by SQLBI](https://www.sqlbi.com/articles/displaying-filter-context-in-power-bi-tooltips/)
 
