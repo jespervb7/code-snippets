@@ -13,5 +13,5 @@ git config --global alias.cm 'commit -m'
 This alias is nice for quick commits. The one's that are super small and don't need elaborate customizations, which is about 80% of my commits.
 
 ```git
-git config --global alias.acp '!f() { git add . && git commit -m "$1" && git push; }; f'
+git config --global alias.cmp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 ```
