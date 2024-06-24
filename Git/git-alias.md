@@ -1,11 +1,17 @@
 # list of my git alias
 
-### git commit -m
+## git commit -m
+
+A shorter version of commit -m
 
 ```git
-$ git config --global alias.cm 'commit -m'
+git config --global alias.cm 'commit -m'
+```
 
-$ git cm "A nice commit message"
-[branch1 0baa729] A nice commit message
- 1 file changed, 2 insertions(+)
+## Stage, commit and push all changes
+
+This alias is nice for quick commits. The one's that are super small and don't need elaborate customizations, which is about 80% of my commits.
+
+```git
+git config --global alias.acp '!f() { git add . && git commit -m "$1" && git push; }; f'
 ```
