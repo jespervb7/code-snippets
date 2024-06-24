@@ -12,6 +12,29 @@ git config --global alias.cm 'commit -m'
 
 This alias is nice for quick commits. The one's that are super small and don't need elaborate customizations, which is about 80% of my commits.
 
+<!---
+TODO: Create SOP for this function.
+
+https://stackoverflow.com/questions/19595067/git-add-commit-and-push-commands-in-one
+
+cd ~/
+Open .bash_profile
+Add
+
+function lazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
+
+Now we need to activate your changes. Type source .bash_profile (or . ~/.bash_profile) and watch your prompt change.
+source ~/.bash_profile
+-->
+
 ```git
-git config --global alias.cmp '!f() { git add -A && git commit -m "$@" && git push; }; f'
+function lazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
 ```
